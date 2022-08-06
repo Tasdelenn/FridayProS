@@ -12,6 +12,7 @@ public class senaryo1 extends BaseStaticDriver {
 
         driver.get(("http://www.automationpractice.com"));
 
+        // İlk iki durum :
         for (int i = 1; i <=2 ; i++) {
 
             WebElement contactUs = driver.findElement(By.cssSelector("[id=\"contact-link\"]>a"));
@@ -38,6 +39,33 @@ public class senaryo1 extends BaseStaticDriver {
             WebElement succesMessage = driver.findElement(By.cssSelector("[class=\"alert alert-success\"]"));
             Assert.assertTrue(succesMessage.getText().contains("successfully"));
         }
+
+        //Üçüncü Durum:
+        WebElement contactUs = driver.findElement(By.cssSelector("[id=\"contact-link\"]>a"));
+        wait.until(ExpectedConditions.elementToBeClickable(contactUs));
+        contactUs.click();
+
+        WebElement subjectHeading = driver.findElement(By.id("id_contact"));
+
+        Select menu = new Select(subjectHeading);
+        menu.selectByValue("" + 0 + "");
+
+        WebElement email = driver.findElement(By.id("email"));
+        email.sendKeys("hakan@test.com");
+
+        WebElement orderReference = driver.findElement(By.id("id_order"));
+        orderReference.sendKeys("1357908642");
+
+        WebElement message = driver.findElement(By.id("message"));
+        message.sendKeys("Kırmızı kuyruklu, kırmızı tilki selected menüden seçim yapmayı unuttu. ");
+
+        WebElement sendButton = driver.findElement(By.cssSelector("[id=\"submitMessage\"]>span"));
+        sendButton.click();
+
+        WebElement succesMessage = driver.findElement(By.cssSelector("[class=\"alert alert-danger\"]"));
+        Assert.assertTrue(succesMessage.getText().contains("Please select a subject from the list provided"));
+
+        System.out.println("TEST PASSED !");
 
         BekleKapat();
 

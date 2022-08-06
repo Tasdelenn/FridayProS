@@ -13,15 +13,15 @@ public class senaryo2 extends BaseStaticDriver {
 
         driver.get(("http://www.automationpractice.com"));
         WebElement login = driver.findElement(By.className("login"));
-        Bekle(2);
+        wait.until(ExpectedConditions.elementToBeClickable(login));
         login.click();
 
         WebElement email = driver.findElement(By.id("email"));
         WebElement password = driver.findElement(By.id("passwd"));
         WebElement loginButton = driver.findElement(By.id("SubmitLogin"));
 
-        email.sendKeys("esargl147@gmail.com");
-        password.sendKeys("123456");
+        email.sendKeys("hakan@test.com");
+        password.sendKeys("1357908642");
         loginButton.click();
 
         Actions actions = new Actions(driver);
@@ -35,43 +35,44 @@ public class senaryo2 extends BaseStaticDriver {
         WebElement addToCard = driver.findElement(By.linkText("Add to cart"));
         addToCard.click();
 
-        WebElement proceedToChecout = driver.findElement(By.xpath("(//div[@class=\"button-container\"]/a)[1]"));
-        proceedToChecout.click();
+        WebElement proceedToCheckOut = driver.findElement(By.xpath("(//div[@class=\"button-container\"]/a)[1]"));
+        proceedToCheckOut.click();
 
-        WebElement pcheck = driver.findElement(By.linkText("Proceed to checkout"));
-        pcheck.click();
+        WebElement pChkSignIncheck = driver.findElement(By.linkText("Proceed to checkout"));
+        pChkSignIncheck.click();
 
-        WebElement pcheck2 = driver.findElement(By.cssSelector("[name=\"processAddress\"]"));
-        pcheck2.click();
+        WebElement pChkAddress = driver.findElement(By.cssSelector("[name=\"processAddress\"]"));
+        pChkAddress.click();
 
-        driver.findElement(By.id("cgv")).click();
+        WebElement iAggreeTick = driver.findElement(By.id("cgv"));
+        WebElement pChkShipping = driver.findElement(By.cssSelector("[name=\"processCarrier\"]"));
+        iAggreeTick.click();
+        pChkShipping.click();
 
-        driver.findElement(By.cssSelector("[name=\"processCarrier\"]")).click();
+        WebElement payByBankWire = driver.findElement(By.cssSelector("[class=\"payment_module\"]>a[class='bankwire']"));
+        payByBankWire.click();
 
-        driver.findElement(By.cssSelector("[class=\"payment_module\"]>a[class='bankwire']")).click();
+        WebElement confirm = driver.findElement(By.cssSelector("[class=\"button btn btn-default button-medium\"]"));
+        confirm.click();
 
-        driver.findElement(By.cssSelector("[class=\"button btn btn-default button-medium\"]")).click();
+        WebElement complateOrderMsg = driver.findElement(By.cssSelector("p.cheque-indent>strong.dark"));
+        WebElement boxMsg = driver.findElement(By.cssSelector("[class=\"box\"]"));
+        String boxMessageAll = boxMsg.getText();
 
-        WebElement succesMessage = driver.findElement(By.cssSelector("[class=\"cheque-indent\"]>strong"));
-        WebElement kututext = driver.findElement(By.cssSelector("[class=\"box\"]"));
-        String kutu = kututext.getText();
-        //System.out.println(kutu);
+        Assert.assertTrue(complateOrderMsg.getText().contains("Your order on My Store is complete."));
 
-        Assert.assertTrue(succesMessage.getText().contains("complete"));
+        WebElement myCostAccount = driver.findElement(By.xpath("(//div[@class=\"header_user_info\"]/a)[1]"));
+        myCostAccount.click();  // Accountumuz üzerinden siparişlere (orders) gideceğiz.
 
-        driver.findElement(By.xpath("(//div[@class=\"header_user_info\"]/a)[1]")).click();
+        WebElement myOrdersIcon = driver.findElement(By.cssSelector("[class=\"icon-list-ol\"]"));
+        myOrdersIcon.click();
 
-        driver.findElement(By.cssSelector("[class=\"icon-list-ol\"]")).click();
+        WebElement orderRefNum = driver.findElement(By.xpath("(//a[@class=\"color-myaccount\"])[1]"));
+        String order = orderRefNum.getText().replaceAll("[^A-Z]", "");  // Referansı 9 haneli (ABCDEFGHI) şekle getirdik.
 
-        WebElement orderNumber = driver.findElement(By.xpath("(//a[@class=\"color-myaccount\"])[1]"));
-        String order = orderNumber.getText().replaceAll("[^A-Z]", "");
-        //System.out.println(orderNumber.getText());
-
-        Assert.assertTrue(kutu.contains(order));
+        Assert.assertTrue(boxMessageAll.contains(order));
         System.out.println("Test Passed");
 
         BekleKapat();
-
-
     }
 }

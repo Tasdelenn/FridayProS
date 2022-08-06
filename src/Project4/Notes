@@ -13,10 +13,10 @@ için bu hesabı kullanın.
 SENARYO 1 | Contact Us sayfasını test edin:
 OK➢ Contact Us sayfasına gitmeli, formu doldurmalı ve göndermelisiniz. İşlemin sonunda
 başarı mesajını doğrulamanız gerekir!
-➢ Bu senaryoyu en az 3 farklı veri kullanarak test etmelisiniz
+OK➢ Bu senaryoyu en az 3 farklı veri kullanarak test etmelisiniz
 SENARYO 2 - Sepete Ürün ekleme ve Ödeme:
-➢ Ana Sayfadan bir ürün seçip sepete eklemelisiniz.
-➢ Ödeme işlemine devam etmeli ve ödemeyi yapmalısınız.
-➢ Sonunda başarı mesajını doğrulamanız gerekir!
-➢ Ayrıca sonunda sipariş numarasını(order referance) göreceksiniz, bu numarayı “My
+OK➢ Ana Sayfadan bir ürün seçip sepete eklemelisiniz.
+OK➢ Ödeme işlemine devam etmeli ve ödemeyi yapmalısınız.
+OK➢ Sonunda başarı mesajını doğrulamanız gerekir!
+OK➢ Ayrıca sonunda sipariş numarasını(order referance) göreceksiniz, bu numarayı “My
 Orders” sayfasından doğrulamalısınız
