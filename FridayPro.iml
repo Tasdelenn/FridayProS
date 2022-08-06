@@ -8,8 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="testng" level="project" />
-    <orderEntry type="library" name="slf4j.api" level="project" />
-    <orderEntry type="library" name="slf4j.nop" level="project" />
     <orderEntry type="library" name="lib" level="project" />
     <orderEntry type="library" name="org.openqa.selenium.support.ui.Select;" level="project" />
     <orderEntry type="library" name="commons-io-2.8.0" level="project" />
@@ -23,5 +21,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="slf4j.api" level="project" />
+    <orderEntry type="library" name="slf4j.nop" level="project" />
   </component>
 </module>

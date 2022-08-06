@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c73b6cbe-6395-440c-8b0e-2c0d59c1a8a6" name="Changes" comment="FridayProS" />
+    <list default="true" id="c73b6cbe-6395-440c-8b0e-2c0d59c1a8a6" name="Changes" comment="FridayProS _2nd" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +32,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Selenium/selenium-java-4.3.0",
-    "project.structure.last.edited": "SDKs",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.28275862"
   }
@@ -88,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659775206862</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="FridayProS _2nd">
+      <created>1659775473454</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659775473454</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,6 +111,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="FridayProS" />
-    <option name="LAST_COMMIT_MESSAGE" value="FridayProS" />
+    <MESSAGE value="FridayProS _2nd" />
+    <option name="LAST_COMMIT_MESSAGE" value="FridayProS _2nd" />
   </component>
 </project>
