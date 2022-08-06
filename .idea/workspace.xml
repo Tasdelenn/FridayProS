@@ -47,7 +47,7 @@
       <recent name="E:\GitArea\FridayPro\drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.senaryo2">
+  <component name="RunManager" selected="Application.senaryo1">
     <configuration name="senaryo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Project4.senaryo1" />
       <module name="FridayPro" />
@@ -76,8 +76,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.senaryo2" />
         <item itemvalue="Application.senaryo1" />
+        <item itemvalue="Application.senaryo2" />
       </list>
     </recent_temporary>
   </component>
@@ -132,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659792188514</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="FridayProS complate ALL">
+      <created>1659792700519</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1659792700519</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
