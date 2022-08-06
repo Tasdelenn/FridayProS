@@ -39,7 +39,7 @@ public class senaryo1 extends BaseStaticDriver {
             Assert.assertTrue(succesMessage.getText().contains("successfully"));
         }
 
-        //BekleKapat();
+        BekleKapat();
 
     }
 }
