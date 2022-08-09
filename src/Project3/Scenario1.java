@@ -12,8 +12,8 @@ public class Scenario1 extends BaseStaticDriver {
 
         driver.get("https://shopdemo.e-junkie.com/");
 
-        WebElement addToCart = driver.findElement(By.cssSelector("button.view_product[onclick^=\"return\"]"));
-        //WebElement addToCart = driver.findElement(By.xpath("(//*[@class='basicDetails'])[2]/button"));
+        //WebElement addToCart = driver.findElement(By.cssSelector("button.view_product[onclick^=\"return\"]")); / OLMADI
+        WebElement addToCart = driver.findElement(By.xpath("(//*[@class='basicDetails'])[2]/button"));
         addToCart.click();
 
         WebElement iframe = driver.findElement(By.cssSelector("iframe.EJIframeV3.EJOverlayV3"));
