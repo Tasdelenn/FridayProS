@@ -32,13 +32,11 @@ public class Scenario1 extends BaseStaticDriver {
 
         driver.switchTo().defaultContent(); // Ana sayfaya geri çıkıyo.
 
-
         WebElement cartItemNo2 = driver.findElement(By.cssSelector("a.navbar-item.cart.smallOnly span#cart_item_nos"));
         //WebElement cartItemNo2 = driver.findElement(By.xpath("//span[@id='cart_item_nos']"));
         Assert.assertEquals("0", cartItemNo2.getText());
         //Assert.assertTrue(cartItemNo2.getText().contains("0")); // Bence equal olmalı. Yoksa mesela 10 u da doğru kabul eder.
 
         BekleKapat();
-
     }
 }
