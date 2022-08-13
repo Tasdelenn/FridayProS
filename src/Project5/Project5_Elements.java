@@ -33,13 +33,13 @@ public class Project5_Elements {
     public WebElement laptopAddCart;
 
     @FindBy(id = "topcartlink")
-    public WebElement shoppingCard;
+    public WebElement shoppingCart;
 
     @FindBy(id = "termsofservice")
     public WebElement iAgree;
 
     @FindBy(id = "checkout")
-    public WebElement checOut;
+    public WebElement checkOut;
 
     @FindBy(css = "[id=\"billing-buttons-container\"]>input")
     public WebElement contunie1;

@@ -51,9 +51,9 @@ public class Project5_POM extends ProjectDriver {
 
         ProjectDriver.loginOl();
         wait.until(ExpectedConditions.elementToBeClickable(elements2.laptopAddCart)).click();
-        wait.until(ExpectedConditions.elementToBeClickable(elements2.shoppingCard)).click();
+        wait.until(ExpectedConditions.elementToBeClickable(elements2.shoppingCart)).click();
         wait.until(ExpectedConditions.elementToBeClickable(elements2.iAgree)).click();
-        wait.until(ExpectedConditions.elementToBeClickable(elements2.checOut)).click();
+        wait.until(ExpectedConditions.elementToBeClickable(elements2.checkOut)).click();
         wait.until(ExpectedConditions.elementToBeClickable(elements2.contunie1)).click();
         wait.until(ExpectedConditions.elementToBeClickable(elements2.contunie2)).click();
         wait.until(ExpectedConditions.elementToBeClickable(elements2.contunie3)).click();
