@@ -17,7 +17,7 @@ public class ProjectDriver {
     public static WebDriverWait wait;
 
     @BeforeClass(alwaysRun = true)  // XML de grupladığımızda, alwaysRun=true yapmadan çalışmadı...
-    public void BaslangicIslemleri(){
+    public void BaslangicIslemleri(){   //Bu proje için ProjectPOM classımız ve ProjectDriver classımız aynı package da olduğu için public dememize gerek yoktu aslında. Ama bu durumda, public olarak  kalabilir... Başka package a taşıma ihtimaline karşı.
 
         Logger logger = Logger.getLogger("");
         logger.setLevel(Level.SEVERE);
