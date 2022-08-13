@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suit 1">
+    <test name="Test Login">
+        <groups>
+            <run>
+                <include name="Login"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="Project5.Project5_POM">
+                <methods>
+                    <include name="_01_positive_sce"/>
+                    <include name="_02_nagative_sce"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Test Shopping">
+        <groups>
+            <run>
+                <include name="shopping"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="Project5.Project5_POM"></class>
+        </classes>
+    </test>
+</suite>
